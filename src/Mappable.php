@@ -480,6 +480,19 @@ trait Mappable
     }
 
     /**
+     * Determine whether a column is mapped.
+     *
+     * @param $column
+     * @return string
+     */
+    public function isMapping($column)
+    {
+        if (is_null(static::$mappedAttributes)) {
+            $this->parseMappings();
+        }
+        return array_search($column, static::$mappedAttributes);
+    }
+    /**
      * Get mapped value.
      *
      * @param  \Illuminate\Database\Eloquent\Model $target
