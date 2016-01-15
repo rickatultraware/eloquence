@@ -1,5 +1,5 @@
 {
-    "name": "ultraware/usofa/eloquence",
+    "name": "ultraware/sofa/eloquence",
     "description": "Flexible Searchable, Mappable, Metable, Validation and more extensions for Laravel Eloquent ORM.",
     "license": "MIT",
     "support": {
